@@ -1,8 +1,8 @@
 title: "Qiyu Qin"
 description: "The academic homepage of Qiyu Qin."
-url: "https://qinwhang.github.io"
-baseurl: "/qiyuqin.github.io"
-repository: "QinWHang/qiyuqin.github.io"
+url: "https://qiyuqin-hust.github.io"
+baseurl: ""
+repository: "qiyuqin-hust/qiyuqin-hust.github.io"
 lang: "en"
 timezone: "Asia/Shanghai"
 
@@ -34,9 +34,9 @@ exclude:
   - vendor
   - node_modules
   - assets/README.md
-  - assets/js
   - images/README.md
   - files/README.md
+  - assets/js
 markdown: kramdown
 highlighter: rouge
 kramdown:
