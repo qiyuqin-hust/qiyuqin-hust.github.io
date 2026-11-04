@@ -1,0 +1,14 @@
+<header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.author.name | escape }}</a>
+    <nav class="homepage-nav" aria-label="Main navigation">
+      <a href="#about-me">About</a>
+      {% if site.data.profile.news.size > 0 %}<a href="#news">News</a>{% endif %}
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      {% if site.data.profile.experience.size > 0 %}<a href="#experience">Experience</a>{% endif %}
+      {% if site.data.profile.awards.size > 0 %}<a href="#awards">Awards</a>{% endif %}
+      {% if site.data.profile.service.size > 0 %}<a href="#service">Service</a>{% endif %}
+    </nav>
+  </div>
+</header>

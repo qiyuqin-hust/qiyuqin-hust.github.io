@@ -1,0 +1,23 @@
+{% assign author = site.author %}
+<div class="profile_box" itemscope itemtype="https://schema.org/Person">
+  <div class="author__avatar">
+    {% if author.avatar and author.avatar != '' %}
+    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name | escape }}" width="176" height="176" itemprop="image">
+    {% else %}
+    <div class="portrait-placeholder" role="img" aria-label="Portrait of {{ author.name | escape }} forthcoming"><span aria-hidden="true">{{ author.initials | escape }}</span></div>
+    {% endif %}
+  </div>
+  <div class="author__content">
+    <h2 class="author__name" itemprop="name">{{ author.name | escape }}{% if author.name_zh and author.name_zh != '' %}<span class="author__name-zh">{{ author.name_zh | escape }}</span>{% endif %}</h2>
+    {% if author.bio and author.bio != '' %}<p class="author__bio">{{ author.bio | escape }}</p>{% endif %}
+    {% if author.employer and author.employer != '' %}<p class="author__affiliation" itemprop="affiliation">{{ author.employer | escape }}</p>{% endif %}
+    <ul class="profile-links">
+      {% if author.location and author.location != '' %}<li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i><span>{{ author.location | escape }}</span></li>{% endif %}
+      {% if author.email and author.email != '' %}<li><a href="mailto:{{ author.email | escape }}" itemprop="email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>Email</a></li>{% endif %}
+      {% if author.googlescholar and author.googlescholar != '' %}<li><a href="{{ author.googlescholar | escape }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a></li>{% endif %}
+      {% if author.github and author.github != '' %}<li><a href="https://github.com/{{ author.github | escape }}" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a></li>{% endif %}
+      {% if author.orcid and author.orcid != '' %}<li><a href="{{ author.orcid | escape }}" itemprop="sameAs"><i class="fab fa-fw fa-orcid" aria-hidden="true"></i>ORCID</a></li>{% endif %}
+      {% if author.cv and author.cv != '' %}<li><a href="{{ author.cv | relative_url }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i>Curriculum Vitae</a></li>{% endif %}
+    </ul>
+  </div>
+</div>

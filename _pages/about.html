@@ -1,0 +1,92 @@
+---
+permalink: /
+title: ""
+author_profile: true
+---
+{% assign profile = site.data.profile %}
+<section id="about-me" class="home-section" aria-labelledby="about-heading">
+  <h1 id="about-heading">About Me</h1>
+  <div class="biography">{{ profile.intro | markdownify }}</div>
+  {% if profile.research_interests.size > 0 %}
+  <p class="research-label">Research interests</p>
+  <ul class="research-interests">
+    {% for interest in profile.research_interests %}<li>{{ interest | escape }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+</section>
+
+{% if profile.news.size > 0 %}
+<section id="news" class="home-section" aria-labelledby="news-heading">
+  <h2 id="news-heading">News</h2>
+  <ul class="news-list">
+    {% for item in profile.news %}
+    <li><time>{{ item.date | escape }}</time><div>{{ item.text | markdownify }}</div></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section id="publications" class="home-section" aria-labelledby="publications-heading">
+  <h2 id="publications-heading">Publications</h2>
+  {% if site.data.publications.size > 0 %}
+  <ol class="publication-list" reversed>
+    {% for paper in site.data.publications %}
+    <li>
+      <div class="publication-title">{% if paper.paper and paper.paper != '' %}<a href="{{ paper.paper | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</div>
+      <div class="publication-authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      <div class="publication-meta"><span>{{ paper.venue | escape }}</span>{% if paper.year %}, {{ paper.year | escape }}{% endif %}{% if paper.note and paper.note != '' %}<span class="publication-note"> · {{ paper.note | escape }}</span>{% endif %}</div>
+      {% if paper.paper or paper.code or paper.project %}
+      <div class="publication-links">
+        {% if paper.paper and paper.paper != '' %}<a href="{{ paper.paper | escape }}">[Paper]</a>{% endif %}
+        {% if paper.code and paper.code != '' %}<a href="{{ paper.code | escape }}">[Code]</a>{% endif %}
+        {% if paper.project and paper.project != '' %}<a href="{{ paper.project | escape }}">[Project]</a>{% endif %}
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="pending-content">Publication list will be updated soon.</p>
+  {% endif %}
+</section>
+
+<section id="education" class="home-section" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education</h2>
+  {% if profile.education.size > 0 %}
+  <ul class="education-list">
+    {% for item in profile.education %}
+    <li><div class="education-topline"><strong>{% if item.url and item.url != '' %}<a href="{{ item.url | escape }}">{{ item.institution | escape }}</a>{% else %}{{ item.institution | escape }}{% endif %}</strong><span class="entry-date">{{ item.date | escape }}</span></div>
+      <div>{{ item.degree | escape }}</div>
+      {% if item.details and item.details != '' %}<div class="entry-details">{{ item.details | markdownify }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="pending-content">Education details will be updated soon.</p>
+  {% endif %}
+</section>
+
+{% if profile.experience.size > 0 %}
+<section id="experience" class="home-section" aria-labelledby="experience-heading">
+  <h2 id="experience-heading">Research Experience</h2>
+  <ul class="education-list">
+    {% for item in profile.experience %}
+    <li><div class="education-topline"><strong>{{ item.institution | escape }}</strong><span class="entry-date">{{ item.date | escape }}</span></div><div>{{ item.role | escape }}</div>{% if item.details %}<div class="entry-details">{{ item.details | markdownify }}</div>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if profile.awards.size > 0 %}
+<section id="awards" class="home-section" aria-labelledby="awards-heading">
+  <h2 id="awards-heading">Honors &amp; Awards</h2>
+  <ul>{% for item in profile.awards %}<li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{% if profile.service.size > 0 %}
+<section id="service" class="home-section" aria-labelledby="service-heading">
+  <h2 id="service-heading">Academic Service</h2>
+  <ul>{% for item in profile.service %}<li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+</section>
+{% endif %}

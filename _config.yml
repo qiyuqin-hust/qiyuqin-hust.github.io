@@ -1,0 +1,56 @@
+title: "Qiyu Qin"
+description: "The academic homepage of Qiyu Qin."
+url: "https://qinwhang.github.io"
+baseurl: "/qiyuqin.github.io"
+repository: "QinWHang/qiyuqin.github.io"
+lang: "en"
+timezone: "Asia/Shanghai"
+
+# Empty personal fields are hidden until the CV and portrait are supplied.
+author:
+  name: "Qiyu Qin"
+  name_zh: ""
+  initials: "QQ"
+  avatar: ""
+  bio: ""
+  employer: ""
+  location: ""
+  email: ""
+  github: "QinWHang"
+  googlescholar: ""
+  orcid: ""
+  cv: ""
+
+include:
+  - _pages
+exclude:
+  - README.md
+  - PROFILE-TEMPLATE.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - run_server.sh
+  - .github
+  - vendor
+  - node_modules
+  - assets/README.md
+  - assets/js
+  - images/README.md
+  - files/README.md
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
