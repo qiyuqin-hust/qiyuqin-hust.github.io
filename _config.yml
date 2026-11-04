@@ -1,24 +1,24 @@
 title: "Qiyu Qin"
-description: "The academic homepage of Qiyu Qin."
+description: "Qiyu Qin (秦祺钰), Ph.D. student at HUST. Research in evolving agents, federated learning, recommender systems, and AI for Science."
 url: "https://qiyuqin-hust.github.io"
 baseurl: ""
 repository: "qiyuqin-hust/qiyuqin-hust.github.io"
 lang: "en"
 timezone: "Asia/Shanghai"
 
-# Empty personal fields are hidden until the CV and portrait are supplied.
+# Personal information. Empty optional fields, including cv, are hidden.
 author:
   name: "Qiyu Qin"
-  name_zh: ""
+  name_zh: "秦祺钰"
   initials: "QQ"
-  avatar: ""
-  bio: ""
-  employer: ""
-  location: ""
-  email: ""
+  avatar: "images/portrait.png"
+  bio: "Ph.D. Student (Year 1)"
+  employer: "Huazhong University of Science and Technology"
+  location: "Wuhan, China"
+  email: "qiyu_qin@hust.edu.cn"
   github: "QinWHang"
-  googlescholar: ""
-  orcid: ""
+  googlescholar: "https://scholar.google.com/citations?user=_1B9G8AAAAAJ&hl=en"
+  orcid: "https://orcid.org/0009-0008-3430-8579"
   cv: ""
 
 include:

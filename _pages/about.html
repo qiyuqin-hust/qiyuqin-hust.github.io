@@ -28,25 +28,32 @@ author_profile: true
 
 <section id="publications" class="home-section" aria-labelledby="publications-heading">
   <h2 id="publications-heading">Publications</h2>
-  {% if site.data.publications.size > 0 %}
-  <ol class="publication-list" reversed>
-    {% for paper in site.data.publications %}
-    <li>
-      <div class="publication-title">{% if paper.paper and paper.paper != '' %}<a href="{{ paper.paper | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</div>
-      <div class="publication-authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-      <div class="publication-meta"><span>{{ paper.venue | escape }}</span>{% if paper.year %}, {{ paper.year | escape }}{% endif %}{% if paper.note and paper.note != '' %}<span class="publication-note"> · {{ paper.note | escape }}</span>{% endif %}</div>
-      {% if paper.paper or paper.code or paper.project %}
-      <div class="publication-links">
-        {% if paper.paper and paper.paper != '' %}<a href="{{ paper.paper | escape }}">[Paper]</a>{% endif %}
-        {% if paper.code and paper.code != '' %}<a href="{{ paper.code | escape }}">[Code]</a>{% endif %}
-        {% if paper.project and paper.project != '' %}<a href="{{ paper.project | escape }}">[Project]</a>{% endif %}
-      </div>
+  {% if site.data.publications.accepted.size > 0 %}
+  <h3 class="publication-group">Accepted Papers</h3>
+  <ol class="accepted-publications">
+    {% for paper in site.data.publications.accepted %}
+    <li class="accepted-paper{% if paper.image and paper.image != '' %} has-figure{% endif %}">
+      {% if paper.image and paper.image != '' %}
+      <a class="publication-figure" href="{{ paper.image | relative_url }}" target="_blank" rel="noopener" aria-label="View figure for {{ paper.title | escape }}">
+        <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | default: paper.title | escape }}" loading="lazy">
+      </a>
       {% endif %}
+      <div class="publication-body">
+        <div class="publication-title">{% if paper.paper and paper.paper != '' %}<a href="{{ paper.paper | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</div>
+        {% if paper.authors and paper.authors != '' %}<div class="publication-authors">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+        <div class="publication-meta"><span>{{ paper.venue | escape }}</span>{% if paper.year %}, {{ paper.year | escape }}{% endif %}{% if paper.note and paper.note != '' %}<span class="publication-note">. {{ paper.note | escape }}</span>{% endif %}</div>
+      </div>
     </li>
     {% endfor %}
   </ol>
-  {% else %}
-  <p class="pending-content">Publication list will be updated soon.</p>
+  {% endif %}
+  {% if site.data.publications.preprints.size > 0 %}
+  <h3 class="publication-group">Preprints</h3>
+  <ul class="preprint-list">
+    {% for paper in site.data.publications.preprints %}
+    <li>{% if paper.authors and paper.authors != '' %}{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}. {% endif %}{% if paper.paper and paper.paper != '' %}<a href="{{ paper.paper | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}. <span class="preprint-status">(Preprint)</span></li>
+    {% endfor %}
+  </ul>
   {% endif %}
 </section>
 

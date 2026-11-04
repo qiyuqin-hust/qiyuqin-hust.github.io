@@ -4,9 +4,9 @@
 
 由个人账号 [QinWHang](https://github.com/QinWHang) 管理的 qiyuqin-hust 组织主页，直接维护在 **main** 分支。基于 [RayeRen/AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 模板，布局参考 [Yichen Li 的学术主页](https://yichenli-hust.github.io/)。
 
-保留模板的 Jekyll / Sass 结构、圆形头像、左侧个人信息栏和右侧正文，并适配手机屏幕。Publications 使用紧凑文字列表，只显示标题、作者、会议或期刊、年份和可选资源链接。
+保留模板的 Jekyll / Sass 结构、圆形头像、左侧个人信息栏和右侧正文，并适配手机屏幕。已录用论文展示方法图、标题、作者、会议或期刊及年份；预印本采用紧凑文字引用。公开论文链接直接放在标题上。
 
-个人简历、照片和学术资料待本人提供；未填写示例论文或虚构经历。
+已填写个人资料、头像、研究方向、教育经历、论文、News 和奖项。简历链接可在后续上传 CV 后启用。
 
 ## 内容维护
 
@@ -20,7 +20,7 @@
 
 完整填写格式见 [PROFILE-TEMPLATE.md](PROFILE-TEMPLATE.md)。YAML 修改后会自动生成页面，无需同步编辑 HTML。
 
-照片上传至 images/avatar.jpg，简历上传至 files/cv.pdf，再设置 _config.yml 中的 author.avatar 和 author.cv。空字段不生成链接；动态、经历、奖项、服务为空时自动隐藏。
+照片上传至 images/portrait.png，简历上传至 files/cv.pdf，再设置 _config.yml 中的 author.avatar 和 author.cv。空字段不生成链接；动态、经历、奖项、服务为空时自动隐藏。
 
 ## 本地预览
 

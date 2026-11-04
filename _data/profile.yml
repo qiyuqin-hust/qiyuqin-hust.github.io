@@ -1,12 +1,38 @@
-# Biography and academic facts are pending the owner's CV.
+# Edit this file to update the biography, News, education, and honors.
 intro: >-
-  Welcome to my academic homepage. My biography and research interests
-  will be updated soon.
-research_interests: []
+  I am a first-year Ph.D. student (enrolled in 2026; expected graduation: 2030) in the [School of Computer Science and Technology](https://cs.hust.edu.cn/)
+  at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/),
+  advised by [Prof. Ruixuan Li](https://idc.hust.edu.cn/rxli/index.htm).
+  I also work closely with [Prof. Haozhao Wang](https://wanghaozhao.mysxl.cn/).
+research_interests:
+  - "Agent Evolution: Recursive Self-Improvement (RSI) and Embodied Agent Evolution"
+  - "Federated Learning: Federated Skills"
+  - "Recommender Systems: Sequential Recommendation and Recommendation Unlearning"
+  - "AI for Science (AI4S)"
 
-# Empty optional sections are hidden from both content and navigation.
-news: []
-education: []
+# Newest first. Use only the date precision you know; a year alone is valid.
+news:
+  - date: "2026"
+    text: 'Our paper **RISE**, "Who Should Evolve? Uncertainty-Aware Role Bottleneck Inference for Multi-Agent LLM Training", has been accepted to **NeurIPS 2026**.'
+education:
+  - institution: "Huazhong University of Science and Technology"
+    degree: "Ph.D. in Computer Science and Technology (in progress)"
+    date: "2026.09 – 2030 (expected)"
+    url: "https://www.hust.edu.cn/"
+    details: "School of Computer Science and Technology. Advisor: [Prof. Ruixuan Li](https://idc.hust.edu.cn/rxli/index.htm)."
+  - institution: "Huazhong University of Science and Technology"
+    degree: "Graduate study in Computer Science and Technology"
+    date: "2024.09 – 2026.09"
+    url: "https://www.hust.edu.cn/"
+    details: "Master's program; transferred to the Ph.D. program. Advisor: [Prof. Ruixuan Li](https://idc.hust.edu.cn/rxli/index.htm)."
+  - institution: "Hefei University of Technology"
+    degree: "Bachelor's degree in Computer Science and Technology"
+    date: "2020.09 – 2024.06"
+    url: "https://www.hfut.edu.cn/"
+    details: "School of Computer Science and Information Engineering. Supervised by [Gongqing Wu](https://faculty.hfut.edu.cn/gw/en/index.htm) and [Yu Gu](https://faculty.uestc.edu.cn/guyu/zh_CN/index/477267/list/index.htm)."
 experience: []
-awards: []
+awards:
+  - "**2026.09** · National Scholarship for Master's Students (硕士研究生国家奖学金), China."
+  - "**2026.12** · Shenzhen Stock Exchange Scholarship (深交所奖学金)."
+  - "**2024–2025** · First-Class Academic Scholarship for Master's Students (硕士研究生一等学业奖学金), HUST."
 service: []

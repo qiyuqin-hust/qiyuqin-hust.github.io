@@ -46,12 +46,11 @@ a:focus-visible { outline: 2px solid #224b8d; outline-offset: 5px; border-radius
 .publication-list > li:last-child { margin-bottom: 0; }
 .publication-list > li::marker { color: #767d85; font-size: 13px; }
 .publication-title { font-weight: 700; line-height: 1.55; margin-bottom: 4px; }
-.publication-authors, .publication-meta, .publication-links { font-size: 14px; line-height: 1.7; }
+.publication-authors, .publication-meta { font-size: 14px; line-height: 1.7; }
 .publication-authors { color: #565c63; }
 .publication-meta { color: #626972; }
 .publication-meta > span:first-child { font-style: italic; }
-.publication-note { color: #9d4c34; font-weight: 700; }
-.publication-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 3px; }
+.publication-note { color: #d92222; font-weight: 700; }
 .page__content .news-list, .page__content .education-list { margin: 0; padding: 0; list-style: none; }
 .news-list li { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 16px; margin-bottom: 10px; }
 .news-list time, .entry-date { font-size: 14px; font-variant-numeric: tabular-nums; color: #737a83; }
@@ -105,3 +104,30 @@ a:focus-visible { outline: 2px solid #224b8d; outline-offset: 5px; border-radius
 .page__content #about-me { margin-top: 0; }
 .page__content #about-me::before { display: none; }
 .homepage-footer { clear: both; width: auto; }
+
+/* Accepted papers retain a small figure; preprints remain text citations. */
+.page__content .publication-group { font-size: 18px; margin: 24px 0 18px; }
+.page__content .accepted-publications { list-style: none; margin: 0; padding: 0; }
+.accepted-paper { margin: 0 0 25px; padding: 0 0 24px; border-bottom: 1px solid #eceeef; }
+.accepted-paper.has-figure { display: grid; grid-template-columns: 185px minmax(0, 1fr); gap: 22px; align-items: start; }
+.publication-body { min-width: 0; }
+.publication-figure { display: block; text-align: center; text-decoration: none !important; }
+.publication-figure img { display: block; width: 100%; max-height: 145px; object-fit: contain; background: #fff; border: 1px solid #e8e9eb; border-radius: 3px; }
+.page__content .preprint-list { padding-left: 21px; margin: 0; font-size: 14px; }
+.preprint-list li { margin-bottom: 13px; line-height: 1.8; }
+.preprint-status { color: #737a83; white-space: nowrap; }
+.author__avatar img { object-position: center 35%; }
+@media (max-width: 760px) {
+  .accepted-paper.has-figure { grid-template-columns: 145px minmax(0, 1fr); gap: 17px; }
+}
+@media (max-width: 640px) {
+  .accepted-paper.has-figure { display: block; }
+  .publication-figure { max-width: 300px; margin: 0 0 14px; }
+  .publication-figure img { max-height: 165px; }
+  .publication-title { font-size: 15px; }
+}
+
+@media (max-width: 640px) {
+  .profile_box { align-items: flex-start; }
+  .author__avatar { margin-top: 4px; }
+}

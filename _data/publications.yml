@@ -1,3 +1,35 @@
-# Compact entries: title, authors, venue, year, paper, code, project, note.
-# Use **Qiyu Qin** in authors to highlight the owner. No figures or abstracts.
-[]
+# Accepted papers use a compact figure-and-citation layout.
+# Preprints use plain citations; authors and links are optional.
+# Keep the actual title and author order. Bold only the homepage owner's name.
+accepted:
+  - title: "Who Should Evolve? Uncertainty-Aware Role Bottleneck Inference for Multi-Agent LLM Training"
+    authors: "**Qiyu Qin**, Yichen Li, Haozhao Wang, Tianzhe Xiao, Hao Zhou, Imran Razzak, Ruixuan Li"
+    venue: "Advances in Neural Information Processing Systems (NeurIPS)"
+    year: 2026
+    note: "CCF-A"
+    image: "images/rise.png"
+    image_alt: "RISE framework for uncertainty-aware role bottleneck inference and selective evolution."
+    paper: ""
+  - title: "Unbiased Rectification for Sequential Recommender Systems under Fake Orders"
+    authors: "**Qiyu Qin**, Yichen Li, Haozhao Wang, Cheng Wang, Rui Zhang, Ruixuan Li"
+    venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)"
+    year: 2026
+    note: "CCF-A (Oral)"
+    image: "images/ditar.png"
+    image_alt: "DITaR framework with dual-view identification and targeted rectification of fake orders."
+    paper: "https://ojs.aaai.org/index.php/AAAI/article/download/38594/42556"
+
+# Add the verified author lists when ready. Do not guess authors or paper URLs.
+preprints:
+  - title: "Beyond the Local Skill Union: Creative Capability Emergence in Federated Skill Evolution"
+    authors: ""
+    paper: ""
+  - title: "Forgetting without Breaking: Structure-aware Unlearning for Sequential Recommender System"
+    authors: ""
+    paper: ""
+  - title: "Share the Schema, Keep the Residual: Privacy-Constrained Federated Skill Transfer for LLM Agents"
+    authors: ""
+    paper: ""
+  - title: "Releasable Is Not Transferable: Certified Release and Transport of Federated Agent Skills"
+    authors: ""
+    paper: ""
