@@ -33,3 +33,9 @@ preprints:
   - title: "Releasable Is Not Transferable: Certified Release and Transport of Federated Agent Skills"
     authors: ""
     paper: ""
+  - title: "A Systematic Survey on Federated Sequential Recommendation"
+    authors: "Yichen Li, **Qiyu Qin**, Gaoyang Zhu, Wenchao Xu, Haozhao Wang, Yuhua Li, Rui Zhang, Ruixuan Li"
+    venue: "arXiv:2504.05313"
+    year: 2025
+    date: "2025-02-19"
+    paper: "https://arxiv.org/abs/2504.05313"
