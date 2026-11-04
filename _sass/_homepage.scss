@@ -51,10 +51,12 @@ a:focus-visible { outline: 2px solid #224b8d; outline-offset: 5px; border-radius
 .publication-meta { color: #626972; }
 .publication-meta > span:first-child { font-style: italic; }
 .publication-note { color: #d92222; font-weight: 700; }
-.page__content .news-list, .page__content .education-list { margin: 0; padding: 0; list-style: none; }
-.news-list li { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 16px; margin-bottom: 10px; }
-.news-list time, .entry-date { font-size: 14px; font-variant-numeric: tabular-nums; color: #737a83; }
-.news-list p, .entry-details p { margin-bottom: 0; }
+.page__content .education-list { margin: 0; padding: 0; list-style: none; }
+.page__content .news-list { margin: 0; padding-left: 21px; }
+.news-list li { margin-bottom: 10px; }
+.news-list time { font-variant-numeric: tabular-nums; }
+.entry-date { font-size: 14px; font-variant-numeric: tabular-nums; color: #737a83; }
+.entry-details p { margin-bottom: 0; }
 .education-list > li { margin-bottom: 22px; }
 .education-topline { display: flex; justify-content: space-between; gap: 20px; }
 .entry-date { flex-shrink: 0; }

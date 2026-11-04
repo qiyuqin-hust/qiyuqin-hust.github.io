@@ -20,7 +20,7 @@ author_profile: true
   <h2 id="news-heading">News</h2>
   <ul class="news-list">
     {% for item in profile.news %}
-    <li><time>{{ item.date | escape }}</time><div>{{ item.text | markdownify }}</div></li>
+    <li><time>{{ item.date | escape }}</time>: {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</li>
     {% endfor %}
   </ul>
 </section>

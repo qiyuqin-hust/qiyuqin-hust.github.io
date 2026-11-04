@@ -12,8 +12,8 @@ research_interests:
 
 # Newest first. Use only the date precision you know; a year alone is valid.
 news:
-  - date: "2026"
-    text: 'Our paper **RISE**, "Who Should Evolve? Uncertainty-Aware Role Bottleneck Inference for Multi-Agent LLM Training", has been accepted to **NeurIPS 2026**.'
+  - date: "2026.09"
+    text: '🎉🎉 Our paper **RISE**, "Who Should Evolve? Uncertainty-Aware Role Bottleneck Inference for Multi-Agent LLM Training", has been accepted to **NeurIPS 2026**.'
 education:
   - institution: "Huazhong University of Science and Technology"
     degree: "Ph.D. in Computer Science and Technology (in progress)"
