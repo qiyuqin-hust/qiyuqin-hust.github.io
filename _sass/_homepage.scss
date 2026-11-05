@@ -135,3 +135,6 @@ a:focus-visible { outline: 2px solid #224b8d; outline-offset: 5px; border-radius
   .profile_box { align-items: flex-start; }
   .author__avatar { margin-top: 4px; }
 }
+
+.page__content .service-list { margin: 0; padding-left: 21px; list-style: disc; }
+.service-list li { margin-bottom: 8px; }

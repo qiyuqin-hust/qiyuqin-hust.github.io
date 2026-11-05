@@ -96,11 +96,7 @@ author_profile: true
   <h2 id="service-heading">Academic Service</h2>
   {% for group in profile.service %}
   <h3 class="service-group">{{ group.title | escape }}</h3>
-  {% if group.layout == 'paragraph' %}
-  {% for item in group.items %}<p>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endfor %}
-  {% else %}
-  <ul>{% for item in group.items %}<li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
-  {% endif %}
+  <ul class="service-list">{% for item in group.items %}<li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
   {% endfor %}
 </section>
 {% endif %}

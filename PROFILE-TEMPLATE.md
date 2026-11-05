@@ -159,7 +159,6 @@ Settings → Pages 的 Source 保持 Deploy from a branch，Branch 为 main，�
 ```yaml
 service:
   - title: "Conference Committee Member"
-    layout: "paragraph"
     items:
       - "Reviewer for NeurIPS’26, WWW’27"
   - title: "Journal Reviewer"
@@ -167,4 +166,4 @@ service:
       - "Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE)"
 ```
 
-后续新增审稿经历时，在对应 `items` 列表中添加条目。`layout: "paragraph"` 以正文段落展示；省略该字段时使用项目列表。`service: []` 可隐藏整个栏目及其导航入口。
+后续新增审稿经历时，在对应 `items` 列表中添加条目。两组均使用项目符号列表，并采用相同缩进。`service: []` 可隐藏整个栏目及其导航入口。
