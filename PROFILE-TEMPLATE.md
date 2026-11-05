@@ -154,7 +154,7 @@ Settings → Pages 的 Source 保持 Deploy from a branch，Branch 为 main，�
 
 ## 维护 Academic Service
 
-在 `_data/profile.yml` 的 `service` 中按类别填写。栏目位于页面底部，不加入顶部导航。
+在 `_data/profile.yml` 的 `service` 中按类别填写。栏目位于页面底部；有内容时，顶部显示 Service 导航入口。
 
 ```yaml
 service:
@@ -167,4 +167,4 @@ service:
       - "Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE)"
 ```
 
-后续新增审稿经历时，在对应 `items` 列表中添加条目。`layout: "paragraph"` 以正文段落展示；省略该字段时使用项目列表。`service: []` 可隐藏整个栏目。
+后续新增审稿经历时，在对应 `items` 列表中添加条目。`layout: "paragraph"` 以正文段落展示；省略该字段时使用项目列表。`service: []` 可隐藏整个栏目及其导航入口。
