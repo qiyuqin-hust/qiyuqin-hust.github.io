@@ -110,7 +110,7 @@ a:focus-visible { outline: 2px solid #224b8d; outline-offset: 5px; border-radius
 .homepage-footer { clear: both; width: auto; }
 
 /* Accepted papers retain a small figure; preprints remain text citations. */
-.page__content .publication-group { font-size: 18px; margin: 24px 0 18px; }
+.page__content .publication-group, .page__content .service-group { font-size: 18px; margin: 24px 0 18px; }
 .page__content .accepted-publications { list-style: none; margin: 0; padding: 0; }
 .accepted-paper { margin: 0 0 25px; padding: 0 0 24px; border-bottom: 1px solid #eceeef; }
 .accepted-paper.has-figure { display: grid; grid-template-columns: 185px minmax(0, 1fr); gap: 22px; align-items: start; }

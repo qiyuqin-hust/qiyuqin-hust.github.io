@@ -94,6 +94,13 @@ author_profile: true
 {% if profile.service.size > 0 %}
 <section id="service" class="home-section" aria-labelledby="service-heading">
   <h2 id="service-heading">Academic Service</h2>
-  <ul>{% for item in profile.service %}<li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+  {% for group in profile.service %}
+  <h3 class="service-group">{{ group.title | escape }}</h3>
+  {% if group.layout == 'paragraph' %}
+  {% for item in group.items %}<p>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endfor %}
+  {% else %}
+  <ul>{% for item in group.items %}<li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% endfor %}
 </section>
 {% endif %}

@@ -34,5 +34,12 @@ experience: []
 awards:
   - "**2026.09** · National Scholarship for Master's Students (硕士研究生国家奖学金), China."
   - "**2026.12** · Shenzhen Stock Exchange Scholarship (深交所奖学金)."
-  - "**2024–2025** · First-Class Academic Scholarship for Master's Students (硕士研究生一等学业奖学金), HUST."
-service: []
+  - "**2024 & 2025** · First-Class Academic Scholarship for Master's Students (硕士研究生一等学业奖学金), HUST."
+service:
+  - title: "Conference Committee Member"
+    layout: "paragraph"
+    items:
+      - "Reviewer for NeurIPS’26, WWW’27"
+  - title: "Journal Reviewer"
+    items:
+      - "Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE)"

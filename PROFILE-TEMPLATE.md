@@ -151,3 +151,20 @@ repository: "qiyuqin-hust/qiyuqin-hust.github.io"
 Settings → Pages 的 Source 保持 Deploy from a branch，Branch 为 main，目录为 / root。不要添加 .nojekyll；当前网站依赖 Jekyll 将资料文件转换成网页。
 
 日常内容修改不需要改 HTML 或 CSS。需要新增栏目、调整布局或改变展示逻辑时，再修改 _pages/about.html、_includes 或 _sass/_homepage.scss。
+
+## 维护 Academic Service
+
+在 `_data/profile.yml` 的 `service` 中按类别填写。栏目位于页面底部，不加入顶部导航。
+
+```yaml
+service:
+  - title: "Conference Committee Member"
+    layout: "paragraph"
+    items:
+      - "Reviewer for NeurIPS’26, WWW’27"
+  - title: "Journal Reviewer"
+    items:
+      - "Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE)"
+```
+
+后续新增审稿经历时，在对应 `items` 列表中添加条目。`layout: "paragraph"` 以正文段落展示；省略该字段时使用项目列表。`service: []` 可隐藏整个栏目。
