@@ -29,6 +29,8 @@ a:focus-visible { outline: 2px solid #224b8d; outline-offset: 5px; border-radius
 .sidebar .profile-links li { margin: 9px 0; padding: 0; font-size: 14px; overflow-wrap: anywhere; }
 .profile-links a { color: #484e57; }
 .profile-links i { color: #6a7480; margin-right: 9px; }
+.profile-link-icon { display: inline-block; width: 1.25em; margin-right: 9px; text-align: center; }
+.profile-link-icon img { display: inline-block; width: 1em; height: 1em; margin: 0; padding: 0; border: 0; border-radius: 0; vertical-align: -0.125em; }
 #main > .page { width: auto; min-width: 0; float: none; margin: 0; padding: 0; }
 .page__inner-wrap { width: 100%; float: none; }
 .page__content { font-size: 16px; }
