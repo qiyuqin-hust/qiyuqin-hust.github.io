@@ -7,8 +7,8 @@ accepted:
     venue: "Advances in Neural Information Processing Systems (NeurIPS)"
     year: 2026
     note: "CCF-A"
-    image: "images/rise.png"
-    image_alt: "RISE framework for uncertainty-aware role bottleneck inference and selective evolution."
+    image: "images/rise-method-20261110.png"
+    image_alt: "RISE framework showing posterior-strength bottleneck scoring, margin-based abstention, support-constrained responsibility refinement, and selective role evolution."
     paper: ""
   - title: "Unbiased Rectification for Sequential Recommender Systems under Fake Orders"
     authors: "**Qiyu Qin**, Yichen Li, Haozhao Wang, Cheng Wang, Rui Zhang, Ruixuan Li"
